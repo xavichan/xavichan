@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>medical management system</title>
+	<title>Medical Management System</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 	<style>
@@ -11,20 +11,10 @@
 	</style>
 </head>
 <body>
-
-
-<?php
-		if($_SESSION['adminstatus'] == ""){
-			header("location:adminlogin.php");
-		}
-		
-		   
-
-	 ?>
-
-
-<div class="container-fluid">
+	<div class="container-fluid">
 		<div class="header_top">
+			<!-- <a href="index.php"><img src="img/dash2.jpg" alt="logo.png img"></a> -->
+
 			<span style="font-size:50px;color:#2c2f84;font-weight:bolder;margin-left:15px;">Doctor Appoinment System</span>
 		</div>
 
@@ -32,15 +22,13 @@
 	<div class="navbar navbar-default nav">
 		<nav class="menu">
 			<ul>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="medical_college.php">Medical College</a></li>
+				<li><a href="doctorinfo.php">Medical Doctors</a></li>
+				<li><a href="about.php">About Us</a></li>
+				<li><a href="contactus.php">Contact Us</a></li>
+				<li><a href="signin.php">User Login</a></li>
 				
-				
-				
-				<li><a href="addDoctor2.php">Add Doctor</a></li>
-				<li><a href="viewDoctor.php">View Doctor</a></li>
-				<li><a href="viewCustomer.php">View Patient</a></li>
-				<li><a href="viewAppoinment.php">View Appoinment</a></li>
-				<li><a href="viewFeedback.php">View Feedback</a></li>
-				<li><a href="logout.php">Logout</a></li>
 			</ul>
 		</nav>
 	</div>
